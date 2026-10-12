@@ -694,3 +694,11 @@ Compiled and maintained from upstream [shy3130/tick-stock-panel](https://github.
 ---
 
 Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
+
+## Sources
+
+Compiled and maintained from upstream [shy3130/tick-stock-panel](https://github.com/shy3130/tick-stock-panel) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
