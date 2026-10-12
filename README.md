@@ -6,7 +6,7 @@ We keep a working index for product and engineering, and tick-stock-panel is the
 
 ## Images
 
-[![tick-stock-panel](images/preview.png)](https://github.com/Swift-Tech-Co)
+[![tick-stock-panel](images/preview.png)](https://github.com/Swift-Tech-Co/tick-stock-panel)
 
 ## 💡 为什么做 TSP
 
@@ -217,7 +217,6 @@ We keep a working index for product and engineering, and tick-stock-panel is the
 
 ### 总览 · 网关居中的开放单体
 
-
 > **双通道并行**:面板走密码会话,外部走 Token 网关  互不影响、互不挤占限流。核心域 8 个域是数据与语义的所有者;扩展域 5 条通道只消费契约,零核心改动。
 
 ```mermaid
@@ -309,14 +308,14 @@ flowchart TB
 
 | 层           | 选型                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | :----------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **后端**     | [![Python](https://img.shields.io/badge/Python_3.11+-3776AB?logo=python&logoColor=white)](https://www.swifttechco.com) [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://www.swifttechco.com) [![Pydantic](https://img.shields.io/badge/Pydantic_v2-E92063?logo=pydantic&logoColor=white)](https://www.swifttechco.com) APScheduler · sse-starlette                                                                                                                                                                                                                                                                       |
-| **数据**     | [![Polars](https://img.shields.io/badge/Polars-CD882D?logo=polars&logoColor=white)](https://www.swifttechco.com)（计算）· [![DuckDB](https://img.shields.io/badge/DuckDB-FFF100?logo=duckdb&logoColor=black)](https://www.swifttechco.com)（查询）· Parquet（存储）                                                                                                                                                                                                                                                                                                                                                                     |
+| **后端**     | [![Python](https://img.shields.io/badge/Python_3.11+-3776AB?logo=python&logoColor=white)](https://github.com/Swift-Tech-Co/tick-stock-panel) [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://github.com/Swift-Tech-Co/tick-stock-panel) [![Pydantic](https://img.shields.io/badge/Pydantic_v2-E92063?logo=pydantic&logoColor=white)](https://github.com/Swift-Tech-Co/tick-stock-panel) APScheduler · sse-starlette                                                                                                                                                                                                                                                                       |
+| **数据**     | [![Polars](https://img.shields.io/badge/Polars-CD882D?logo=polars&logoColor=white)](https://github.com/Swift-Tech-Co/tick-stock-panel)（计算）· [![DuckDB](https://img.shields.io/badge/DuckDB-FFF100?logo=duckdb&logoColor=black)](https://github.com/Swift-Tech-Co/tick-stock-panel)（查询）· Parquet（存储）                                                                                                                                                                                                                                                                                                                                                                     |
 | **回测**     | 自研仓位模拟引擎(T+1/费用/滑点/分钟回放)· vectorbt(部分路径)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | **数据源**   | TickFlow 官方 SDK · fuyao(同花顺 REST) · 插件化扩展(stock-sdk 示例插件 · YAML 自定义源)                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| **AI**(可选) | [![OpenAI兼容](https://img.shields.io/badge/OpenAI兼容-412991?logo=openai&logoColor=white)](https://www.swifttechco.com) DeepSeek / 通义 / Ollama 等 · 策略生成 / 报告 / **对话助手**(助手依赖工具调用能力, 需 OpenAI 兼容接口)                                                                                                                                                                                                                                                                                                                                                                          |
+| **AI**(可选) | [![OpenAI兼容](https://img.shields.io/badge/OpenAI兼容-412991?logo=openai&logoColor=white)](https://github.com/Swift-Tech-Co/tick-stock-panel) DeepSeek / 通义 / Ollama 等 · 策略生成 / 报告 / **对话助手**(助手依赖工具调用能力, 需 OpenAI 兼容接口)                                                                                                                                                                                                                                                                                                                                                                          |
 | **MCP**      | [mcp-server](./mcp-server/README.md)(官方 SDK 2.x, stdio)  12 工具按 scope 暴露,权限裁决复用开放网关                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **前端**     | [![React 18](https://img.shields.io/badge/React_18-61DAFB?logo=react&logoColor=black)](https://www.swifttechco.com) [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://www.swifttechco.com) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.swifttechco.com) [![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white)](https://www.swifttechco.com) Tanstack Query · Lightweight Charts(TradingView 开源) · [![ECharts](https://img.shields.io/badge/ECharts-AA344D?logo=apacheecharts&logoColor=white)](https://www.swifttechco.com) · dnd-kit |
-| **部署**     | [![Docker](https://img.shields.io/badge/Docker_单容器-2496ED?logo=docker&logoColor=white)](https://www.swifttechco.com) 两阶段构建,前端 dist 拷进后端镜像                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **前端**     | [![React 18](https://img.shields.io/badge/React_18-61DAFB?logo=react&logoColor=black)](https://github.com/Swift-Tech-Co/tick-stock-panel) [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://github.com/Swift-Tech-Co/tick-stock-panel) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://github.com/Swift-Tech-Co/tick-stock-panel) [![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white)](https://github.com/Swift-Tech-Co/tick-stock-panel) Tanstack Query · Lightweight Charts(TradingView 开源) · [![ECharts](https://img.shields.io/badge/ECharts-AA344D?logo=apacheecharts&logoColor=white)](https://github.com/Swift-Tech-Co/tick-stock-panel) · dnd-kit |
+| **部署**     | [![Docker](https://img.shields.io/badge/Docker_单容器-2496ED?logo=docker&logoColor=white)](https://github.com/Swift-Tech-Co/tick-stock-panel) 两阶段构建,前端 dist 拷进后端镜像                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 ---
 
@@ -380,7 +379,7 @@ flowchart TB
 ```bash
 # 十行内跑通第一个调用
 curl -H "Authorization: Bearer tsp_xxxx" \
-  "https://www.swifttechco.com"
+  "https://github.com/Swift-Tech-Co/tick-stock-panel"
 ```
 
 ---
@@ -389,7 +388,7 @@ curl -H "Authorization: Bearer tsp_xxxx" \
 
 不想挨个页面点着找数据?**把问题直接问出来**  助手在本地真实数据上调用工具取数, 逐字流式作答, 每次取数都可展开核对。
 
-[![AI 对话助手  市场总览问答](./screenshots/AI对话助手.png)](https://www.swifttechco.com)
+[![AI 对话助手  市场总览问答](./screenshots/AI对话助手.png)](https://github.com/Swift-Tech-Co/tick-stock-panel)
 
 | 打开方式          | 说明                                 |
 | :---------------- | :----------------------------------- |
@@ -440,7 +439,7 @@ curl -H "Authorization: Bearer tsp_xxxx" \
 docker run -d --name tsp -p 3018:3018 -v ${PWD}/data:/app/data ghcr.io/shy3130/tick-stock-panel:latest
 ```
 
-**打开 https://www.swifttechco.com 即可使用** · 多架构镜像(linux/amd64 · arm64)由 CI 自动发布,本地无需 Python / Node
+**打开 https://github.com/Swift-Tech-Co/tick-stock-panel 即可使用** · 多架构镜像(linux/amd64 · arm64)由 CI 自动发布,本地无需 Python / Node
 
 **还没决定要不要部署?** 先逛逛 **官网 tsp.shy313.com**  功能总览 · 账户注册 · API Key 管理
 
@@ -470,7 +469,7 @@ docker run -d --name tsp -p 3018:3018 -v ${PWD}/data:/app/data ghcr.io/shy3130/t
 ```bash
 cp .env.example .env
 docker compose up --build
-# 打开 https://www.swifttechco.com
+# 打开 https://github.com/Swift-Tech-Co/tick-stock-panel
 ```
 
 <details>
@@ -502,13 +501,13 @@ CODEX_CLI_VERSION=0.144.3 docker compose up --build
 装一个本机 AI 编程助手(Trae / Codex / OpenCode / ZCode / WorkBuddy 等,任选其一),新建一个空文件夹用助手打开,把下面这段话原样发给它:
 
 ```text
-帮我部署开源项目 https://www.swifttechco.com 到本机:
+帮我部署开源项目 https://github.com/Swift-Tech-Co/tick-stock-panel 到本机:
 克隆到当前文件夹;有 Docker 优先拉 ghcr.io/shy3130/tick-stock-panel:latest 现成镜像,没有就走 Dev 模式;
 缺少的依赖(Docker / Python / Node)帮我一起装好;
 最后告诉我浏览器打开哪个地址、需要填哪些 Key。
 ```
 
-AI 会自动完成克隆、装依赖、启动服务,完成后浏览器打开 https://www.swifttechco.com 即可;`TICKFLOW_API_KEY` 等配置按 AI 提示填,详见 [配置](#️-配置)。
+AI 会自动完成克隆、装依赖、启动服务,完成后浏览器打开 https://github.com/Swift-Tech-Co/tick-stock-panel 即可;`TICKFLOW_API_KEY` 等配置按 AI 提示填,详见 [配置](#️-配置)。
 
 ### 方式 D:Dev 模式(二次开发推荐)
 
@@ -517,7 +516,7 @@ cp .env.example .env       # 按需填 TICKFLOW_API_KEY(留空 = None 模式)
 ./dev.sh                   # Windows: .\dev.ps1
 ```
 
-自动检查 / 下载依赖、释放端口、同时起前后端。后端 → https://www.swifttechco.com · 前端 → https://www.swifttechco.com。
+自动检查 / 下载依赖、释放端口、同时起前后端。后端 → https://github.com/Swift-Tech-Co/tick-stock-panel · 前端 → https://github.com/Swift-Tech-Co/tick-stock-panel。
 
 ### 方式 E:桌面客户端(Windows / macOS)
 
@@ -665,13 +664,21 @@ Home | Services | Careers | Referral Program | Influencers | About | Contact
 
 **Connect**
 
-- Website: swifttechco.com
+- Website: https://github.com/Swift-Tech-Co/tick-stock-panel
 - LinkedIn: [linkedin.com/in/stephenoladoke](https://www.linkedin.com/in/stephenoladoke/)
 - LinkedIn (Company): [linkedin.com/company/swift-tech-co](https://www.linkedin.com/company/swift-tech-co)
 - X: [@MrOladoke](https://x.com/MrOladoke)
 - Instagram: [@mr.oladoke](https://www.instagram.com/mr.oladoke/)
 - Instagram (Company): [@swifttechco](https://www.instagram.com/swifttechco/)
 - Organization: [github.com/Swift-Tech-Co](https://github.com/Swift-Tech-Co)
+
+## Sources
+
+Compiled and maintained from upstream [shy3130/tick-stock-panel](https://github.com/shy3130/tick-stock-panel) under permissive open-source license.
+
+---
+
+Maintained by [Swift Tech Co.](https://github.com/Swift-Tech-Co) - [Telegram](https://t.me/+Qt_eFvkb2rliMzNh)
 
 ## Sources
 
